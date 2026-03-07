@@ -1,0 +1,68 @@
+Step 1: Create a New Repository on GitHub
+Log in to your GitHub account.
+Click the + icon in the top-right and select New repository.
+Name your repository (e.g., my-project). To avoid conflicts, do not initialize it with a README or .gitignore.
+Click Create repository and copy the HTTPS URL provided (e.g., https://github.com).
+
+Step 2: Initialize and Commit Locally
+Open your terminal (CMD or Git Bash) in your project folder and run:
+Initialize Git: git init -b main (this creates a hidden .git folder).
+Stage Files: git add . (prepares all files for the first commit).
+Commit Changes: git commit -m "Initial commit".
+
+Step 3: Connect and Push to GitHub
+
+
+Fetch latest branch using "git fetch"
+
+1. Setup & Configuration
+Before starting, set your identity to ensure your contributions are correctly attributed.
+
+git config --global user.name "Your Name": Sets your name for all commits.
+git config --global user.email "your_email@example.com": Sets your email for all commits.
+git config --list: Displays all your current Git settings.
+
+2. Starting a Project
+git init: Initializes a new, empty Git repository in your current folder.
+git clone [URL]: Downloads an existing repository and its entire history from a remote server.
+
+3. The Core Workflow (Stage & Commit)
+This is the standard cycle for saving your work locally.
+
+git status: Shows the current state of your files (modified, staged, or untracked).
+git add [file]: Moves a specific file to the staging area.
+git add .: Stages all modified and new files at once.
+git commit -m "your message": Saves your staged snapshot to the local repository with a descriptive message.
+git diff: Shows line-by-line differences for files that have not yet been staged.
+
+4. Branching & Merging
+Branches allow you to work on new features without affecting the main code.
+
+git branch: Lists all local branches in your repository.
+git branch [branch-name]: Creates a new branch with the specified name.
+git checkout [branch-name]: Switches to the specified branch.
+git checkout -b [branch-name]: Combines creating and switching to a new branch in one step.
+git merge [branch-name]: Integrates changes from the specified branch into your current branch.
+
+5. Remote Syncing
+These commands connect your local work to servers like GitHub or GitLab.
+git remote add origin [URL]: Connects your local repository to a remote server.
+git push -u origin [branch-name]: Uploads your local commits to the remote repository.
+git pull: Downloads changes from the remote repository and immediately merges them into your current branch.
+git fetch: Downloads updates from the remote repo without merging them, allowing you to review them first.
+
+6. Undoing & Inspecting Changes
+git log: Displays the commit history for the current branch.
+git log --oneline: Shows a compact, one-line-per-commit history.
+git stash: Temporarily saves uncommitted changes so you can switch branches without committing.
+git stash pop: Restores the most recently stashed changes.
+git reset --hard HEAD: Discards all local changes and reverts to the last commit (use with caution).
+git revert [commit-ID]: Creates a new commit that undoes the changes of a previous one without deleting its history
+
+
+
+
+
+
+
+
